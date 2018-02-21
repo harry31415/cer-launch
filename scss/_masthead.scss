@@ -7,9 +7,10 @@ header.masthead {
     padding-bottom: 100px;
 
     color: white;
-    background: url('../img/bg-pattern.png'), $theme-secondary;
-    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background: url('../img/green.png');
+    //background: url('../img/bg-pattern.png'), $theme-secondary;
+    //background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    //background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
     .header-content {
         max-width: 500px;
         margin-bottom: 100px;
@@ -43,5 +44,14 @@ header.masthead {
         .device-container {
             max-width: 325px;
         }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: fade-out(black, .7);
     }
 }

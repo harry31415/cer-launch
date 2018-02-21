@@ -154,9 +154,7 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  background: url("../img/green.png");
 }
 
 header.masthead .header-content {
@@ -198,40 +196,71 @@ header.masthead .device-container .screen img {
   }
 }
 
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 section.download {
   position: relative;
   padding: 150px 0;
+  background-image: url("../img/greenf.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-section.download h2 {
-  font-size: 50px;
+section.download .cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+section.download .cta-content h2 {
+  font-size: 30px;
+  max-width: 450px;
   margin-top: 0;
-}
-
-section.download .badges .badge-link {
-  display: block;
   margin-bottom: 25px;
-}
-
-section.download .badges .badge-link:last-child {
-  margin-bottom: 0;
-}
-
-section.download .badges .badge-link img {
-  height: 60px;
+  color: white;
 }
 
 @media (min-width: 768px) {
-  section.download .badges .badge-link {
-    display: inline-block;
-    margin-bottom: 0;
+  section.download .cta-content h2 {
+    font-size: 30px;
   }
 }
 
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
+section.download .cta-content h3 {
+  font-size: 20px;
+  max-width: 350px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: white;
+}
+
+@media (min-width: 668px) {
+  section.download .cta-content h3 {
+    font-size: 20px;
   }
+}
+
+section.download .tran {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+
+section.download .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 section.features .section-heading {
@@ -285,7 +314,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
+  background-image: url("../img/greenf.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
