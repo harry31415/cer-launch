@@ -7,10 +7,10 @@ header.masthead {
     padding-bottom: 100px;
 
     color: white;
-    background: url('../img/green.png');
-    //background: url('../img/bg-pattern.png'), $theme-secondary;
-    //background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    //background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    //background: url('../img/green.png');
+    background: url('../img/bg-pattern.png'), $theme-secondary;
+    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #6E9371, #8E9EAE );
+    background: url('../img/bg-pattern.png'), linear-gradient(to left, #6E9371 , #8E9EAE);
     .header-content {
         max-width: 500px;
         margin-bottom: 100px;
@@ -52,6 +52,33 @@ header.masthead {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: fade-out(black, .7);
+        background-color: fade-out(#76D7C4, .7);
+    }
+    .imglogo {
+        max-width: 100%;
+        height: auto;
+        display:block;
+        margin:auto;
+    }
+    @media screen and (max-width: 767px) {   
+        .imglogo{
+            max-width:40%
+        } 
+    }
+
+    @media screen and (min-width: 768px) {      
+        .imglogo{
+            max-width:60%
+        } 
+    } 
+    @media (min-width: 992px) {      
+        .imglogo{
+            max-width:90%
+        } 
+    }
+    @media (min-width: 1200px) {    
+        .imglogo{
+            max-width:90%
+        } 
     }
 }

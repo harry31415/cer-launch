@@ -154,7 +154,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/green.png");
+  background: url("../img/bg-pattern.png"), #7b4397;
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #6E9371, #8E9EAE);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #6E9371, #8E9EAE);
 }
 
 header.masthead .header-content {
@@ -202,7 +204,38 @@ header.masthead .overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(118, 215, 196, 0.3);
+}
+
+header.masthead .imglogo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  header.masthead .imglogo {
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header.masthead .imglogo {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead .imglogo {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead .imglogo {
+    max-width: 90%;
+  }
 }
 
 section.download {
